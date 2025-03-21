@@ -1,4 +1,4 @@
-# Lightweight Blog Template
+# Minimalistic Blog Template
 <center>
 This documentation is made for Debian based systems, also it looks best on a wide screen
 </center>
@@ -36,6 +36,64 @@ This project focuses on the essentials. Additionally, a content management syste
 -----------------------------------------------------------------------------------------------
 
 ## Setup:
+
+if nodejs, npx and create-next-app is already installed, you can skip the next steps, if not please install them:
+
+<br>
+<br>
+
+<pre>
+<code>
+$ sudo apt install nodejs npm
+$ sudo npm install -g npm
+$ sudo npm install -g create-next-app
+</pre>
+</code>
+
+<br>
+<br>
+
+download and build the template with npx create-next-app
+
+<br>
+<br>
+
+<pre>
+<code>
+$ npx create-next-app@latest blog-template --example https://github.com/CacheMeIfYouCan1/minmalBlogTemplate
+
+$ npm run build
+</pre>
+</code>
+
+<br>
+<br>
+
+now the app is ready to be run. It can be run in dev mode using turbopack or it can be run in production mode without
+
+<br>
+<br>
+prod:
+
+<pre>
+<code>
+
+$ npm start
+
+</code>
+</pre
+
+<br>
+<br>
+
+<pre>
+<code>
+
+$ npm run dev 
+
+</code>
+</pre>
+
 
 -----------------------------------------------------------------------------------------------
 
