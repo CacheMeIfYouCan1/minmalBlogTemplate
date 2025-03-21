@@ -1,6 +1,6 @@
 # Lightweight Blog Template
 <center>
-_This documentation is made for Debian based systems, also it looks best on a wide screen_
+This documentation is made for Debian based systems, also it looks best on a wide screen
 </center>
 
 
@@ -57,7 +57,7 @@ blog/
 |- tsconfig.json
 |- .next/
 | |- (...)
-|- node\_modules/
+|- node_modules/
 | |- (...)
 |- public/
 | |- posts/
@@ -135,7 +135,7 @@ envoronment configuration file. Contains SMTP and PGP-Key.
 Package descriptor file. Contains metadata, scripts and dependencies
 
 #### /package-lock.json:
-Contains the versions of dependencies installed in the node\_modules. Necessary to create a consistent environment across isntallations
+Contains the versions of dependencies installed in the node_modules. Necessary to create a consistent environment across isntallations
 
 #### /next-env.d.ts:
 Contains configuration for TypeScript compiler
@@ -352,26 +352,26 @@ The PGP-Key needs to get trimmed, decoded, and is stripped of the begin and end 
 <br>
 <br>
 
-The button triggers the respective function, either toggle\_pgp\_desktop() or toggle\_pgp\_mobileThe functions toggle the hidden attribute of the corresponding
+The button triggers the respective function, either toggle_pgp_desktop() or toggle_pgp_mobileThe functions toggle the hidden attribute of the corresponding
 element. Which reveals a block with a public pgp Key.
 <br>
 <br>
 
 <pre>
 <code>
-	const toggle\_pgp\_mobile = () => {
-		const pgp\_key = document.getElementById('pgp\_key\_mobile');
-		if(pgp\_key){
-			pgp\_key.classList.toggle('hidden');
+	const toggle_pgp_mobile = () => {
+		const pgp_key = document.getElementById('pgp_key_mobile');
+		if(pgp_key){
+			pgp_key.classList.toggle('hidden');
 		}else {
 			console.error('Element not found.');
 		}
 	};
 
-	const toggle\_pgp\_desktop = () => {
-		const pgp\_key = document.getElementById('pgp\_key\_desktop');
-		if(pgp\_key){
-			pgp\_key.classList.toggle('hidden');
+	const toggle_pgp_desktop = () => {
+		const pgp_key = document.getElementById('pgp_key_desktop');
+		if(pgp_key){
+			pgp_key.classList.toggle('hidden');
 		}else {
 			console.error('Element not found.');
 		}
@@ -411,14 +411,14 @@ Toggling the navigation list works as following:
 
 <pre>
 <code>
-	const toggle\_dropdown = () => {
+	const toggle_dropdown = () => {
 		
-		const list = document.getElementById('dropdown\_list');
+		const list = document.getElementById('dropdown_list');
 
 		if(list){
 			list.classList.toggle('hidden');
 		}else {
-			console.error('Element with id "dropdown\_list" not found.');
+			console.error('Element with id "dropdown_list" not found.');
 		}
 	};
 </code>
@@ -632,11 +632,11 @@ If other values are needed, view the nodemailer documentation.
 <pre>
 <code>
 	const transporter = nodemailer.createTransport({
-			host: process.env.SMTP\_HOST!,
-			port: Number(process.env.SMTP\_PORT),
+			host: process.env.SMTP_HOST!,
+			port: Number(process.env.SMTP_PORT),
 			auth: {
-				user: process.env.SMTP\_USER!,
-				pass: process.env.SMTP\_PASS!,
+				user: process.env.SMTP_USER!,
+				pass: process.env.SMTP_PASS!,
 			}
 		});
 </code>
@@ -656,9 +656,9 @@ The text value is the jsonData variable passed.
 <pre>
 <code>
 	const content = {
-			from: process.env.MAIL\_FROM!,
-			to: process.env.MAIL\_TO!,
-			subject: process.env.MAIL\_SUBJECT!,
+			from: process.env.MAIL_FROM!,
+			to: process.env.MAIL_TO!,
+			subject: process.env.MAIL_SUBJECT!,
 			text: jsonData,
 			headers: {
 				'Content-Type': 'text/plain; charset=UTF-8',
@@ -751,40 +751,40 @@ Most of the texts on the blog pages can be set in the .env.local file as followi
 
 
 ##### Navbar
-<br>NEXT\_PUBLIC\_NB\_TITLE -> Title which is used in /content/navbar/title.tsx, displayed in the center of the topbar
+<br>NEXT_PUBLIC_NB_TITLE -> Title which is used in /content/navbar/title.tsx, displayed in the center of the topbar
 <br>
 <br>
 
 ##### Home page
-<br>NEXT\_PUBLIC\_HP\_TITLE -> Title, which is used in /content/homepage/components/homepage.tsx, first title on the main page
-<br>NEXT\_PUBLIC\_HP\_SUBTITLE -> Subtitle, which is used in /content/homepage/components/homepage.tsx, second title on the main page
-<br>NEXT\_PUBLIC\_HP\_BUTTON -> Button text which is used in /content/homepage/components/homepage.tsx, contact button
+<br>NEXT_PUBLIC_HP_TITLE -> Title, which is used in /content/homepage/components/homepage.tsx, first title on the main page
+<br>NEXT_PUBLIC_HP_SUBTITLE -> Subtitle, which is used in /content/homepage/components/homepage.tsx, second title on the main page
+<br>NEXT_PUBLIC_HP_BUTTON -> Button text which is used in /content/homepage/components/homepage.tsx, contact button
 <br>
 <br>
 ##### Blog page
 
-<br>NEXT\_PUBLIC\_BLOG\_TITLE -> Title used in /content/blog/components/banner.tsx, main title of the blog page
-<br>NEXT\_PUBLIC\_BLOG\_SUBTITLE -> Subtitle used in /content/blog/components/banner.tsx, subtitle of the blog page
+<br>NEXT_PUBLIC_BLOG_TITLE -> Title used in /content/blog/components/banner.tsx, main title of the blog page
+<br>NEXT_PUBLIC_BLOG_SUBTITLE -> Subtitle used in /content/blog/components/banner.tsx, subtitle of the blog page
 <br>
 <br>
 ##### Contact page
 
-<br>NEXT\_PUBLIC\_CONTACT\_TITLE -> Title used in /content/contact/components/contactform.tsx main title of the contact page
-<br>NEXT\_PUBLIC\_CONTACT\_TEXT -> Text used in /content/contact/components/contactform.tsx main title of the contact page
+<br>NEXT_PUBLIC_CONTACT_TITLE -> Title used in /content/contact/components/contactform.tsx main title of the contact page
+<br>NEXT_PUBLIC_CONTACT_TEXT -> Text used in /content/contact/components/contactform.tsx main title of the contact page
 <br>
 <br>
-<br>NEXT\_PUBLIC\_PGP\_KEY -> public pgp key, which is used in multiple components. This needs to be encoded in base64
+<br>NEXT_PUBLIC_PGP_KEY -> public pgp key, which is used in multiple components. This needs to be encoded in base64
 <br>
 <br>
-<br>SMTP\_HOST -> this is your SMTP server
-<br>SMTP\_PORT -> This is your SMTP port
-<br>SMTP\_USER -> SMTP username
-<br>SMTP\_PASS -> SMTP password
+<br>SMTP_HOST -> this is your SMTP server
+<br>SMTP_PORT -> This is your SMTP port
+<br>SMTP_USER -> SMTP username
+<br>SMTP_PASS -> SMTP password
 <br>
 <br>
-<br>MAIL\_FROM -> the sender of the email from the contact form
-<br>MAIL\_TO -> the receiver of the contact mail
-<br>MAIL\_SUBJECT -> subject of the generated email
+<br>MAIL_FROM -> the sender of the email from the contact form
+<br>MAIL_TO -> the receiver of the contact mail
+<br>MAIL_SUBJECT -> subject of the generated email
 
 
 
