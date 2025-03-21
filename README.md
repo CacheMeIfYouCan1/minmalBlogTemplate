@@ -47,13 +47,14 @@ if nodejs, npx and create-next-app is already installed, you can skip the next s
 $ sudo apt install nodejs npm
 $ sudo npm install -g npm
 $ sudo npm install -g create-next-app
-</pre>
 </code>
+</pre>
 
 <br>
 <br>
 
-download and build the template with npx create-next-app
+download and build the template with 'npx create-next-app', then start it using 'npm run dev' or 'npm start'.
+Please note that with 'npm run dev' you can use turbopack for smoother development
 
 <br>
 <br>
@@ -63,38 +64,13 @@ download and build the template with npx create-next-app
 $ npx create-next-app@latest blog-template --example https://github.com/CacheMeIfYouCan1/minmalBlogTemplate
 
 $ npm run build
-</pre>
-</code>
-
-<br>
-<br>
-
-now the app is ready to be run. It can be run in dev mode using turbopack or it can be run in production mode without
-
-<br>
-<br>
-prod:
-
-<pre>
-<code>
-
-$ npm start
-
-</code>
-</pre
-
-<br>
-<br>
-
-<pre>
-<code>
 
 $ npm run dev 
-
 </code>
 </pre>
 
-
+<br>
+<br>
 -----------------------------------------------------------------------------------------------
 
 ## Documentation:
