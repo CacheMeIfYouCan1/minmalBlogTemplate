@@ -619,7 +619,7 @@ The SMTP configuration is read from .env.local.
 The process of sending the mail contains three steps:
 <br>
 <br>
-####1. creating a transporter:
+#### 1. creating a transporter:
 
 The transporter is created using the SMTP host, port and the auth data. All of these should be stored in .env.local and are accessed through.
 All values, except the port, need to be assigned using a non-null assertion operator. The port value should be casted into a Number.
@@ -646,7 +646,7 @@ If other values are needed, view the nodemailer documentation.
 <br>
 
 
-####2. setting the content:
+#### 2. setting the content:
 All variables, except the text, are taken from the environmental variables in .env.local. They should be assigned using a non-null assertion operator.
 The text value is the jsonData variable passed. 
 
@@ -1025,7 +1025,7 @@ by NexJS per default.
 <br>
 <br>
 
-####Feel free to contact me through the contact panel, if you need assistance, support or need custom features developed
+#### Feel free to contact me through the contact panel, if you need assistance, support or need custom features developed
 
 
 -----------------------------------------------------------------------------------------------
