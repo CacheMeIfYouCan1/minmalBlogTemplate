@@ -619,7 +619,7 @@ The SMTP configuration is read from .env.local.
 The process of sending the mail contains three steps:
 <br>
 <br>
-#####1. creating a transporter:
+####1. creating a transporter:
 
 The transporter is created using the SMTP host, port and the auth data. All of these should be stored in .env.local and are accessed through.
 All values, except the port, need to be assigned using a non-null assertion operator. The port value should be casted into a Number.
@@ -646,7 +646,7 @@ If other values are needed, view the nodemailer documentation.
 <br>
 
 
-#####2. setting the content:
+####2. setting the content:
 All variables, except the text, are taken from the environmental variables in .env.local. They should be assigned using a non-null assertion operator.
 The text value is the jsonData variable passed. 
 
@@ -684,7 +684,7 @@ headers: {
 <br>
 <br>
 
-#####3. Sending the Mail
+####3. Sending the Mail
 
 <br>
 <br>
@@ -750,24 +750,24 @@ Most of the texts on the blog pages can be set in the .env.local file as followi
 
 
 
-##### Navbar
+#### Navbar
 <br>NEXT_PUBLIC_NB_TITLE -> Title which is used in /content/navbar/title.tsx, displayed in the center of the topbar
 <br>
 <br>
 
-##### Home page
+#### Home page
 <br>NEXT_PUBLIC_HP_TITLE -> Title, which is used in /content/homepage/components/homepage.tsx, first title on the main page
 <br>NEXT_PUBLIC_HP_SUBTITLE -> Subtitle, which is used in /content/homepage/components/homepage.tsx, second title on the main page
 <br>NEXT_PUBLIC_HP_BUTTON -> Button text which is used in /content/homepage/components/homepage.tsx, contact button
 <br>
 <br>
-##### Blog page
+#### Blog page
 
 <br>NEXT_PUBLIC_BLOG_TITLE -> Title used in /content/blog/components/banner.tsx, main title of the blog page
 <br>NEXT_PUBLIC_BLOG_SUBTITLE -> Subtitle used in /content/blog/components/banner.tsx, subtitle of the blog page
 <br>
 <br>
-##### Contact page
+#### Contact page
 
 <br>NEXT_PUBLIC_CONTACT_TITLE -> Title used in /content/contact/components/contactform.tsx main title of the contact page
 <br>NEXT_PUBLIC_CONTACT_TEXT -> Text used in /content/contact/components/contactform.tsx main title of the contact page
@@ -1025,7 +1025,7 @@ by NexJS per default.
 <br>
 <br>
 
-#####Feel free to contact me through the contact panel, if you need assistance, support or need custom features developed
+####Feel free to contact me through the contact panel, if you need assistance, support or need custom features developed
 
 
 -----------------------------------------------------------------------------------------------
