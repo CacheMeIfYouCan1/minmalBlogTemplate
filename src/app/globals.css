@@ -1,24 +1,146 @@
 @import "tailwindcss";
 
+/*general styling*/
+
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: linear-gradient( #bbbbbb, #808b96);
+  --foreground: #A67C52;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  color:black;
+}
+
+.primary-color {
+	background-color: #78866B;
+}
+
+.secondary-color {
+	background-color: #9C9A6D;
+}
+
+
+
+/*Markdown rendering*/
+
+@media (max-width: 768px) {
+  .markdown-content table,
+  .markdown-content table th,
+  .markdown-content table td {
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: 12px;
+
+  }
+}
+
+.markdown-content table {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size:12px;
+  margin-bottom: 20;
+
+}
+
+.markdown-content table th,
+.markdown-content table td {
+  padding: 10px;
+  border: 1px solid #000000;
+  
+}
+
+.markdown-content {
+  word-wrap: break-word;
+}
+
+.markdown-content pre {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  white-space: pre-wrap;         
+  word-wrap: break-word;   
+}
+
+.markdown-content code{
+  background-color: #666666; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 30px;
+  display:block; 		
+  border-radius: 4px; 
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 0.9rem; 
+}
+
+.markdown-content h1 {
+  font-size: 50px;
+  font-style: bold;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.markdown-content h2 {
+  font-size: 35px;	
+  font-style: bold;
+  padding-bottom: 10px;
+  padding-top: 35px;
+  text-align:center;
+  text-decoration: underline;
+}
+
+.markdown-content h3 {
+  font-size: 30px;
+  font-style: bold;
+  padding-bottom: 10px;
+  padding-top: 25px;
+  text-align: center;
+
+}
+
+.markdown-content h4 {
+  font-size: 25px;
+  font-style: bold;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.markdown-content h5 {
+  font-size: 20px;
+  font-style: bold;
+  padding-bottom: 10px;
+  padding-top: 25px;
+}
+
+
+
+.markdown-content ol {
+  list-style-type: decimal;
+  padding-left: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block
+}
+
+.markdown-content li {
+  margin-bottom: 8px;
+}
+
+.markdown-content hr {
+  
+  margin-bottom: 50px;
+  margin-top: 50px;
+
 }
