@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)]">
 
-		<main className="w-full flex-grow gap-8 sm:items-start">
+		<main className="w-screen overflow-hidden flex-grow gap-8 sm:items-start">
 			<HomePage/>
 		</main>
 
